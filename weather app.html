@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="content">
+        <div class="container">
+            <div class="slides">
+            <div class=" Allslides" style="background-image: url('https://www.shutterstock.com/image-photo/heatwave-hot-sun-climate-change-260nw-1152324746.jpg'); width: 95%; height: 95%;"></div>  
+            <div class=" Allslides" style="background-image: url('https://cdn.pixabay.com/photo/2023/10/30/19/10/clouds-8353592_640.jpg');width: 95%; height: 95%;"></div>  
+            <div class=" Allslides" style="background-image: url('https://media.istockphoto.com/id/503284599/photo/rainy-weather.webp?b=1&s=612x612&w=0&k=20&c=91gtbftcHcKCYTa2YCFIRSF6uf2TNh1Rqi0DtsMdHgg=');width: 95%; height: 95%;"></div>
+            <div class=" Allslides" style="background-image: url('https://t3.ftcdn.net/jpg/03/26/19/12/360_F_326191234_Q12utSZ0vmxV6tKQXogktU7e3dmZ2JLI.jpg'); width: 95%; height: 95%;"></div> 
+            <div class=" Allslides" style="background-image: url('https://t4.ftcdn.net/jpg/07/85/53/93/360_F_785539354_eVNuCnAlYGC3WZWKmdQD4fVKcfS6U1iR.jpg'); width: 95%; height: 95%;"></div> 
+            <div class=" Allslides" style="background-image: url('https://c0.wallpaperflare.com/preview/284/933/218/palm-trees-wind-windy-weather.jpg'); width: 95%; height: 95%;"></div> 
+            </div>
+        </div>
+        <div id="total">
+            <div class="nav">
+                <input type="text" name="x" id="Search" placeholder="Search city">
+                <button onclick="" id="sub">Search</button>
+                <div id="suggestions">
+            
+                </div>
+                <div id="wi">
+        
+                </div>
+                <canvas id="forecastGraph" width="100" height="30"></canvas>  
+                <div id="city-name"></div>
+            </div>
+            <video id="background-video" autoplay muted loop></video>
+        </div>
+        <div class="main">
+            <div class="inner">
+                <div id="text">
+                    <h1>
+                        <span class="h1">UnifiedWeather</span>
+                    </h1>
+                    <h2>
+                        <span class="h2">Weather Forecast, Hourly Forecast</span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="weather.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" ></script>
+
+</body>
+</html>
